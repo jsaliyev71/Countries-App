@@ -9,8 +9,8 @@ function AppRouter() {
   return (
     <Routes>
         <Route path="/" element={<Layout />}>
-            <Route index element={<Navigate to="/all" replace />} />
-            <Route path='/all' element={<Main />} />
+            <Route index element={<Navigate to="all" replace />} />
+            <Route path='all' element={<Main />} />
             <Route path='/:contin' element={<Continents />} />
             <Route path='/:contin/:id' element={<Country />} />
         </Route>
